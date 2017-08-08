@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Online Registration Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/normalise.css">
+</head>
+<body>
+	  <header>
+      <h1>THE CODE REVIEW</h1>
+    </header><!--/.main-header-->   
+  
+  
+  <div class="banner">
+         <h2>Signup for our newsletter</h2>
+         <span class="tagline">Get the latest news on how your code is doing right in your inbox</span>
+  </div><!--/.banner-->
+  
+<form action="index.html" method="post">
+  <fieldset>
+      <legend><span class="contact_info">1</span> Contact Information</legend> 
+    
+        <label for="name">Name:</label>
+         <input type="text" id="name" name="user_name">
+         
+        <label for="email">Email:</label>
+          <input type="email" id="mail" name="user_email">
+         
+        <label for="phone_number">Phone Number:</label>
+          <input type="phone_number" id="phone" name="user_phone">
+         
+        <label for="street_address">Street Address:</label>
+          <input type="street_address" id="street" name="user_street">
+         
+        <label for="city">city:</label>
+          <input type="city" id="city" name="user_city">
+         
+        <label for="state">state:</label>
+          <select id="state" name="user_state">
+            <option value="western_province">Western Province</option>
+            <option value="northern_province">Northern Province</option>
+            <option value="eastern_cape">Eastern Cape</option>
+            <option value="Gauteng">Gauteng</option>
+            <option value="kzn">KwaZulu Natal</option>
+    </select>
+          
+         
+        <label for="zip_code">Zip Code:</label>
+          <input type="zip_code" id="zip" name="user_zip">
+ </fieldset>
+
+  
+  
+<fieldset>
+  
+ <legend><span class="Newsletter">2</span> Newsletter</legend>
+      <span>Select the newsletters you would like to recieve</span><br>
+      
+      <input type="checkbox" id="html_news" value="interest_html" name="user_interest"><label class="format" for="html_news">HTML News</label><br>
+      <input type="checkbox" id="css_news" value="interest_css" name="user_interest"><label class="format" for="css_news">CSS News</label><br>
+      <input type="checkbox" id="javascript_news" value="interest_javascript" name="user_interest"><label class="format" for="javascript_news">Javascript News</label><br>
+      
+  <label>Newsletter Format</label><br>
+          <input type="radio" id="html_format" value="html_format" name="news_format"><label for="html_format" class="format">HTML</label><br>
+      
+          <input type="radio" id="plain_text" value="plain_text" name="news_format"><label for="plain_text" class="format">Plain text</label><br>
+      
+     
+            <span>Other topics you would like to hear about</span><br>
+             <textarea id="topics" name="user_topics">yo</textarea>
+            <button type="submit">Sign Up</button>
+	</fieldset>
+	
+	<footer class="main-footer">
+		<span>&copy;2015 Residents of The Best City Ever.</span>
+	</footer>
+  
+  
+    </form>
+  </body>
+</html>
