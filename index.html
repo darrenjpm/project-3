@@ -20,7 +20,7 @@
   
 <form action="index.html" method="post">
   <fieldset>
-      <legend><span class="number">1</span> Contact Information</legend> 
+      <legend class="contact-info"><span class="number">1</span> Contact Information</legend> 
     
         <label for="name">Full Name:</label>
          <input type="text" id="name" name="user_name" placeholder="required">
@@ -57,26 +57,27 @@
 <fieldset>
   
  <legend><span class="number">2</span> Newsletter</legend>
-      <span>Select the newsletters you would like to recieve</span><br>
+      <span class="title">Select the newsletters you would like to recieve</span><br>
+   
       
       <input type="checkbox" id="html" value="interest_html" name="user_interest"><label class="format" for="html">HTML News</label><br>
       <input type="checkbox" id="css_" value="interest_css" name="user_interest"><label class="format" for="css">CSS News</label><br>
       <input type="checkbox" id="javascript" value="interest_javascript" name="user_interest"><label class="format" for="javascript">Javascript News</label><br>
       
-  <label class="nf">Newsletter Format</label><br>
+  <label class="news-format">Newsletter Format</label><br>
           <input type="radio" id="html_format" value="html_format" name="news_format"><label for="html_format" class="format">HTML</label><br>
       
           <input type="radio" id="plain_text" value="plain_text" name="news_format"><label for="plain_text" class="format">Plain text</label><br>
       
      
-            <span>Other topics you would like to hear about</span><br>
+            <span class="title">Other topics you would like to hear about</span>
              <textarea id="topics" name="user_topics" placeholder="Add some feedback"></textarea>
   
-            <button type="submit">Sign Up</button>
+            <button style="cursor:pointer" type="submit">Sign Up</button>
 	</fieldset>
 	
 	<footer class="main-footer">
-		<span>&copy; The Code Review </span>
+		<span> Copywrite The Code Review </span>
 	</footer>
   
   

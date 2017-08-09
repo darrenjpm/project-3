@@ -1,21 +1,55 @@
+
+/****************************
+Base layout styles
+*****************************/
+header{
+    color: #fff;
+    padding: 10px 0;
+    font-family:'Abril Fatface', cursive;
+    font-size: 10px;
+    background:#2b313a;
+    text-align: center;
+}
+  
+.banner{
+    margin: 10px auto;
+    padding-bottom:30px;
+    text-align: center;
+}
+
+body{
+  font-family: 'Merriweather', serif;
+  color: #384047;
+  margin: 0 auto;
+}
+
+form {
+  max-width: 700px;
+  margin-top: 30px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+
 /****************************
 element styles
 *****************************/
-fieldset {
-    border: none;
-    margin: 40px 0;   
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
-.tagline{
-  padding-bottom: 30px;
-   border-bottom: solid 5px #2b313a;
+fieldset {
+    border: none;
+    margin: 0px 0; 
 }
 
 legend{
   color: black;
-  padding-top: 20px;
+  padding-top: 35px;
   border-top: solid 2px #2b313a;
   width: 100%;
+  font-size: 1.4em;
+  margin-bottom: 10px;
 }
 
 input[type="text"],
@@ -24,30 +58,36 @@ input[type="tel"],
 textarea,
 select {
   background: rgba(255,255,255,0.1);
-  border: none;
+  border-radius: 5px;
   font-size: 16px;
   height: auto;
   margin: 0;
   outline: 0;
   padding: 15px;
   width: 100%;
-   background-color: #e8eeef;
   background-color: #e8eeef;
   color: #8a97a0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
+  font-style:italic;
+}
+
+input[type=tel]:focus,
+input[type=text]:focus,
+textarea:focus,
+input[type=mail]:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
 }
 
 
 input[type="radio"],
 input[type="checkbox"]{
-margin: 0 4px 8px 0;
-  float: left;
-  padding-left: 3px;
-
+  margin: 10px 10px 10px 0px;
 }
+
 .number {
-  background-color:  #e8eeef ;
+  background-color: #e8eeef ;
   color: #2b313a;
   height: 30px;
   width: 30px;
@@ -60,52 +100,44 @@ margin: 0 4px 8px 0;
   border-radius: 100%;
 }
 
-legend {
-  font-size: 1.4em;
-  margin-bottom: 15px;
-}
-label {
+.contact-info::before{
+  border-top: solid 5px #2b313a;
+  content: "";
+  width: 100%;
   display: block;
-  margin-bottom: 8px;
+  position: relative;
+  top: -50px;
 }
 
-.nf{
-font-weight: 300;
-  font-size: 1.35em;
-}
 
-/****************************
-Base layout styles
-*****************************/
-header{
-    color: #fff;
-    margin: 50;
-    padding: 10px 0;
-    font-family:'Abril Fatface', cursive;
-    font-size: 10px;
-    background:#2b313a;
-    text-align: center;
-}
-  
-.banner{
-    margin: 0;
-    padding: 10px 0;
-    text-align: center;
-}
-
-body{
-  font-family: 'Merriweather', serif;
-  color: #384047;
-  margin: 0;
-}
-
-form {
-  max-width: 700px;
+.title {
+  display: block;
+  color: navy;
   margin: 10px auto;
-  padding: 10px 20px;
-  background: #f4f7f8;
-  border-radius: 10px;
 }
+
+.news-format{
+  display: block;
+  margin-top: 20px;
+  color: navy;
+}
+
+button {
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background: #53BAB4;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+.main-footer{
+  text-align: center;
+  color: lightgrey;
+  font-style:italic;
+}
+
 
 /****************************
 MEDIA QUERIES
