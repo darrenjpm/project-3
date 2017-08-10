@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Online Registration Form</title>
-<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Merriweather" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface,Merriweather" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/normalise.css">
 </head>
@@ -25,20 +25,20 @@
         <label for="name">Full Name:</label>
          <input type="text" id="name" name="user_name" placeholder="required">
          
-        <label for="email">Email:</label>
+        <label for="mail">Email:</label>
           <input type="email" id="mail" name="user_email" placeholder="required">
          
-        <label for="phone_number">Phone Number:</label>
+        <label for="phone">Phone Number:</label>
           <input type="tel" id="phone" name="user_phone">
          
-        <label for="street_address">Street Address:</label>
+        <label for="street">Street Address:</label>
           <input type="text" id="street" name="user_street">
          
         <label for="city">city:</label>
           <input type="text" id="city" name="user_city">
          
         <label for="state">state:</label>
-          <select id="state" type="text" name="user_state">
+          <select id="state" name="user_state">
             
             <option value="western_province">Western Province</option>
             <option value="northern_province">Northern Province</option>
@@ -48,8 +48,8 @@
     </select>
           
          
-        <label for="zip_code">Zip Code:</label>
-          <input type="text" id="zip" name="user_zip">
+        <label for="zip">Zip Code:</label>
+          <input type="text" id="zip" name="zip_code">
  </fieldset>
 
   
@@ -61,11 +61,11 @@
    
       
       <input type="checkbox" id="html" value="interest_html" name="user_interest"><label class="format" for="html">HTML News</label><br>
-      <input type="checkbox" id="css_" value="interest_css" name="user_interest"><label class="format" for="css">CSS News</label><br>
+      <input type="checkbox" id="css" value="css" name="user_interest"><label class="format" for="css">CSS News</label><br>
       <input type="checkbox" id="javascript" value="interest_javascript" name="user_interest"><label class="format" for="javascript">Javascript News</label><br>
       
   <label class="news-format">Newsletter Format</label><br>
-          <input type="radio" id="html_format" value="html_format" name="news_format"><label for="html_format" class="format">HTML</label><br>
+          <input type="radio" id="html_format" value="html_format" name="news-format"><label for="html_format" class="format">HTML</label><br>
       
           <input type="radio" id="plain_text" value="plain_text" name="news_format"><label for="plain_text" class="format">Plain text</label><br>
       
