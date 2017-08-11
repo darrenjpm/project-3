@@ -13,7 +13,7 @@ header{
   
 .banner{
     margin: 10px auto;
-    padding-bottom:30px;
+    padding-bottom:10px;
     text-align: center;
 }
 
@@ -25,7 +25,6 @@ body{
 
 form {
   max-width: 700px;
-  margin-top: 30px;
   margin: 0 auto;
   padding: 0 20px;
 
@@ -40,7 +39,7 @@ element styles
 
 fieldset {
     border: none;
-    margin: 0px 0; 
+    
 }
 
 legend{
@@ -52,23 +51,23 @@ legend{
   margin-bottom: 10px;
 }
 
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea,
 select {
+  display: inline-block;
   background: rgba(255,255,255,0.1);
   border-radius: 5px;
   font-size: 16px;
   height: auto;
-  margin: 0;
-  outline: 0;
-  padding: 15px;
+  padding: 10px;
   width: 100%;
   background-color: #e8eeef;
   color: #8a97a0;
   box-shadow: 0 4px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-style:italic;
 }
 
@@ -155,6 +154,8 @@ form{
 
  .number{
   margin-left:-50px;
-  
   }
+  
+
+  
 }
