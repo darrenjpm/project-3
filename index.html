@@ -23,22 +23,22 @@
   <fieldset>
       <legend class="contact-info"><span class="number">1</span> Contact Information</legend> 
     
-        <label for="name">Full Name:</label>
-         <input type="text" id="name" name="user_name" placeholder="Required">
+        <label class="details" for="name">Full Name:</label>
+         <input type="text" id="name" name="user_name" placeholder="Required" Required>
          
-        <label for="mail">Email:</label>
-          <input type="email" id="mail" name="user_email" placeholder="Required">
+        <label class="details" for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email" placeholder="Required" Required>
          
-        <label for="phone">Phone Number:</label>
+        <label class="details" for="phone">Phone Number:</label>
           <input type="tel" id="phone" name="user_phone">
          
-        <label for="street">Street Address:</label>
+        <label class="details" for="street">Street Address:</label>
           <input type="text" id="street" name="user_street">
          
-        <label for="city">city:</label>
+        <label class="details" for="city">city:</label>
           <input type="text" id="city" name="user_city">
          
-        <label for="state">state:</label>
+        <label class="details" for="state">state:</label>
           <select id="state" name="user_state">
             <option value="western_province">Western Province</option>
             <option value="northern_province">Northern Province</option>
@@ -48,7 +48,7 @@
           </select>
           
          
-        <label for="zip">Zip Code:</label>
+        <label class="details"for="zip">Zip Code:</label>
           <input size="6" type="text" id="zip" name="zip_code" maxlength="6"  size="6">
  </fieldset>
 
@@ -69,7 +69,7 @@
       <input type="radio" id="plain_text" value="plain_text" name="news-format"><label for="plain_text" class="format">Plain text</label><br>
       
      
-      <span class="title">Other topics you would like to hear about</span>
+      <span class="title">Other topics you would like to hear about:</span>
       <textarea id="topics" name="user_topics" placeholder="Add some feedback"></textarea>
   
     <button style="cursor:pointer" type="submit">Sign Up</button>
